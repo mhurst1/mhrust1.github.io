@@ -18,7 +18,7 @@ body {
 
     }
     p{
-        color: black;
+        color: white;
     }
 
     .projects { 
@@ -30,6 +30,25 @@ body {
         width: 30%;
         margin: 10px;
         padding: 20px 10px;
-        background: white; 
+        background: rgb(81, 31, 31); 
         border-radius: 25%;
+    }
+    .project img{
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+        border: 2px solid black; 
+        display: block;
+        margin: auto;
+    }
+    a { /* change the appearance of ALL links */
+        text-decoration: none;
+        text-align: center;
+        color: beige;
+        font-style: italic;
+        text-decoration: underline;
+    }
+    .project p { /* change the appearance of paragraph tags inside .project divs */
+        text-align: center;
+        margin: 15px;
     }

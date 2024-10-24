@@ -12,7 +12,6 @@ body {
     h2{
         color: beige;
         text-align: left;
-        text-decoration: underline;
         font-style: italic;
         font-weight: 500;
 
@@ -51,4 +50,39 @@ body {
     .project p { /* change the appearance of paragraph tags inside .project divs */
         text-align: center;
         margin: 15px;
+    }
+    .about{
+        display:flex;
+        flex-wrap:wrap;
+        margin-right: 100px;
+        margin-left: 100px;
+        justify-content: center;
+    }  
+    .about img {
+        width: 200px;
+        height: 200px;
+        border-radius: 25%;
+        border: 2px solid black
+    }
+    .about p {
+        width:50%;
+        text-align: center;
+        margin: auto;
+        line-height: 125%;
+    }
+    .skills p{
+        color: white;
+        font-size: medium;
+        font-style: italic;
+        
+    }
+    .contact p{
+        color: white;
+        text-decoration: underline;
+    }
+
+    h4{
+        text-align: left;
+        color: white;
+        text-decoration: underline;
     }

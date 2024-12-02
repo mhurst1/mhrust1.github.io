@@ -73,7 +73,6 @@ body {
     .skills p{
         color: white;
         font-size: medium;
-        font-style: italic;
         
     }
     .contact p{
@@ -86,3 +85,9 @@ body {
         color: white;
         text-decoration: underline;
     }
+
+    ul{
+        text-align: left;
+        color: beige;
+    }
+   

@@ -1,0 +1,62 @@
+/*Matthew Hurst | CSCE 242*/
+
+/*Content*/
+body {
+    background: lightgray;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+}
+
+/*Main Page Div*/
+#content{
+    background-color: rgba(105,105,105,0.9);
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/*GitHub Link and Picture*/
+#githubSection{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#githubLink a{
+    background-color: darkgray;
+    text-decoration: none;
+    font-style: italic;
+    color:black;
+    padding: 4px;
+    border-radius: 3px;
+}
+#githubLink a:hover{
+    color:white;
+}
+
+/*Assignments Section*/
+#assignmentLinks a{
+    text-decoration: none;
+    font-style: italic;
+    color:black;
+    background-color: darkgray;
+    padding: 4px;
+    border-radius: 3px;
+}
+#assignmentLinks a:hover{
+    color:white;
+}
+
+/*Images*/
+img{
+    border: 1.5px solid black;
+    border-radius: 20px;
+}
+
+/*Headers*/
+h1{
+    color:lightgray;
+}
+h2{
+    color:lightgray;
+}

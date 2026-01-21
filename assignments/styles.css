@@ -1,0 +1,63 @@
+/*Matthew Hurst | CSCE 242*/
+
+/*Structure*/
+body {
+    background: url(https://images.unsplash.com/photo-1728486145245-d4cb0c9c3470?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(218, 221, 225);
+    
+}
+#content{
+    background-color: rgba(105,105,105,0.9);
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Navigation */
+#main-nav a{
+    text-decoration: none;
+    background: rgb(217, 119, 66);
+    color: black;
+    padding: 4px;
+    border-radius: 3px;
+}
+#main-nav a:hover{
+    background: rgb(235, 150, 100);
+;
+}
+
+/* Tables */
+table{
+    border-collapse: collapse;
+}
+th,
+td {
+    border: 2px solid black;
+    padding: 6px;
+    background-color: rgb(105,105,105);
+
+}
+th{
+    background-color: rgb(105,105,105);
+}
+
+/* Images */
+img{
+    border: 2px solid black;
+    border-radius:4px;
+    padding: 6px;
+}
+
+/* Headers*/
+h1{
+    color: rgb(217, 119, 66);
+}
+h2{
+    color: rgb(235, 150, 100);
+    font-style: italic;
+}

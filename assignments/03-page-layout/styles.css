@@ -1,54 +1,152 @@
 /*Matthew Hurst | CSCE 242*/
 
 /*Structure*/
-#main-header {
-    background-color: aliceblue;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(222, 222, 196);
+    width: 90%;
+    border: 1px solid rgb(111, 158, 161);
+    margin: auto;
+
 }
+
+#main-header {
+    background-color: beige;
+    padding: 5px;
+
+}
+
 #main-content {
     background-color: beige;
     padding: 5px;
+
 }
+
 #main-footer {
-    background-color: tan;
+    background-color:rgb(222, 138, 138);
     padding: 5px;
+
+}
+
+/*Header/Footer*/
+#main-header h1{
+    text-align: center;
+    color: rgb(111, 158, 161);
+    margin-bottom: 10px;
+}
+
+
+#main-footer p{
+    text-align: center;
+    color: white;
 }
 
 /*Navigation*/
 #main-nav ul{
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    padding-left: 0;
+    padding: 0;
     list-style-type: none;
 }
 
 #main-nav li{
     padding-left: 0;
     padding: 5px;
-    background-color: beige;
+    background-color:rgb(222, 138, 138);
+    border: 1px solid rgb(111, 158, 161);
 }
 
 #main-nav a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
-/*Typography*/
-body {
-    font-family: Arial, Helvetica, sans-serif;
+#main-nav a:hover{
+    color: rgb(111, 158, 161);
 }
-#main-header h1{
-    text-align: center;
+
+/*Top Section*/
+
+#top-section {
+    display: flex;
+    flex-direction: column;
 }
-#main-footer p{
+
+#top-section h2{
+    color: rgb(111, 158, 161);
+}
+
+
+/*Gallery*/
+#gallery{
+    display: flex;
+    flex-direction: column;
+}
+
+#gallery h3{
     text-align: center;
+    background-color: rgb(111, 158, 161);
+    padding: 10px;
+    color: white;
+}
+
+.titles img{
+    display: block;
+    margin: auto;
+}
+
+#list{
+    margin: auto;
+}
+
+/*Idea Content*/
+.idea-content{
+    display:flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 15px;
+    background-color: rgb(111, 158, 161);
+}
+.idea-content img{
+    display: block;
+    margin: auto;
+}
+
+.idea-content h3{
+    color: white;
+}
+
+.idea-content p{
+    color: white;
 }
 
 /*Larger Resolutions*/
 @media (min-width:900px){
-    #main-nav ul, 
-    .flex-container{
-        display: flex;
+
+    #main-nav ul{
+        flex-direction: row;
     }
-    #main-nav li, .titles{
+  
+    #top-section{
+        flex-direction: row;
+    }
+    #gallery {
+        flex-direction: row;
+    }
+
+
+    .idea-content{
+        flex-direction: row;
+        padding: 0;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #main-nav li,
+    #top-section h2,
+     .titles{
         flex: 1;
     }
+    
 }

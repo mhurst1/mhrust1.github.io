@@ -2,10 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>CSCE 242 : Matthew Hurst</title>
-    <link rel="stylesheet" href="styles.css"/>
+        <title>CSCE 242 : Matthew Hurst</title>
+        <link rel="stylesheet" href="styles.css"/>
     </head>
     <body>
+
         <header id="main-header">
             <h1>Layout with Flex</h1>
             <nav id="main-nav">
@@ -17,67 +18,86 @@
                 </ul>
             </nav>
         </header>
+
         <main id="main-content">
-            <h2>This is very important text</h2>
-            <div class="flex-container">
-                <section class="titles">
-                    <h3>Title 1</h3>
-                    <img src ="https://dummyimage.com/200x300/7a787a/fff" alt="Dummy Image" width="150"/>
-                </section>
-                <section class="titles">
-                    <h3>Title 2</h3>
-                    <img src ="https://dummyimage.com/200x300/7a787a/fff" alt="Dummy Image" width="150"/>
-                </section>
-                <section class="titles">
-                    <h3>Title 3</h3>
-                    <img src ="https://dummyimage.com/200x300/7a787a/fff" alt="Dummy Image" width="150"/>
-                </section>
-                <section class="titles">
-                    <h3>Title 4</h3>
-                    <img src ="https://dummyimage.com/200x300/7a787a/fff" alt="Dummy Image" width="150"/>
-                </section>
-            </div>
-            <div>
+            <section id="top-section">
+                <h2>This is very important text</h2>
+                
+                <div id="gallery" class="columns">
+                    <section class="titles">
+                        <h3>Title 1</h3>
+                        <img src ="https://dummyimage.com/200x300/aec7be/fff" alt="Dummy Image" width="150"/>
+                    </section>
+                    <section class="titles">
+                        <h3>Title 2</h3>
+                        <img src ="https://dummyimage.com/200x300/aec7be/fff" alt="Dummy Image" width="150"/>
+                    </section>
+                    <section class="titles">
+                        <h3>Title 3</h3>
+                        <img src ="https://dummyimage.com/200x300/aec7be/fff" alt="Dummy Image" width="150"/>
+                    </section>
+                    <section class="titles">
+                        <h3>Title 4</h3>
+                        <img src ="https://dummyimage.com/200x300/aec7be/fff" alt="Dummy Image" width="150"/>
+                    </section>
+                </div>
+            </section>
+
+
+            <div id="list">
                 <section class="idea-content">
-                    <h3>Idea 1</h3>
-                    <img src ="https://dummyimage.com/200x200/7a787a/fff" alt="Dummy Image" width="150"/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    <img src ="https://dummyimage.com/200x200/aec7be/fff" alt="Dummy Image" width="150"/>
+                    <div>
+                        <h3>Idea 1</h3>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Morbi augue est, sollicitudin quis tellus sit amet, 
                         euismod mattis purus. Sed quis pulvinar diam. Fusce vehicula ornare enim. 
                         Aenean ullamcorper augue vel fermentum finibus. Nulla consequat rutrum mi, 
                         a suscipit lectus rutrum cursus. Integer eu urna facilisis, mattis nisi quis, 
                         cursus mauris. Suspendisse eget eros purus. Maecenas sed libero non libero laoreet 
                         rhoncus. Vivamus porttitor est vitae libero dictum faucibus. Proin a lobortis tortor.
-                    </p>
+                        </p>
+                    </div>
                 </section>
+
                 <section class="idea-content">
-                    <h3>Idea 2</h3>
-                    <img src ="https://dummyimage.com/200x200/7a787a/fff" alt="Dummy Image" width="150"/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    <img src ="https://dummyimage.com/200x200/aec7be/fff" alt="Dummy Image" width="150"/>
+                    <div>
+                        <h3>Idea 2</h3>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Morbi augue est, sollicitudin quis tellus sit amet, 
                         euismod mattis purus. Sed quis pulvinar diam. Fusce vehicula ornare enim. 
                         Aenean ullamcorper augue vel fermentum finibus. Nulla consequat rutrum mi, 
                         a suscipit lectus rutrum cursus. Integer eu urna facilisis, mattis nisi quis, 
                         cursus mauris. Suspendisse eget eros purus. Maecenas sed libero non libero laoreet 
                         rhoncus. Vivamus porttitor est vitae libero dictum faucibus. Proin a lobortis tortor.
-                    </p>
+                        </p>
+                    </div>
                 </section>
+
                 <section class="idea-content">
-                    <h3>Idea 3</h3>
-                    <img src ="https://dummyimage.com/200x200/7a787a/fff" alt="Dummy Image" width="150"/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    <img src ="https://dummyimage.com/200x200/aec7be/fff" alt="Dummy Image" width="150"/>
+                    <div>
+                        <h3>Idea 3</h3>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Morbi augue est, sollicitudin quis tellus sit amet, 
                         euismod mattis purus. Sed quis pulvinar diam. Fusce vehicula ornare enim. 
                         Aenean ullamcorper augue vel fermentum finibus. Nulla consequat rutrum mi, 
                         a suscipit lectus rutrum cursus. Integer eu urna facilisis, mattis nisi quis, 
                         cursus mauris. Suspendisse eget eros purus. Maecenas sed libero non libero laoreet 
                         rhoncus. Vivamus porttitor est vitae libero dictum faucibus. Proin a lobortis tortor.
-                    </p>
+                        </p>
+                    </div>
                 </section>
             </div>
         </main>
+
         <footer id="main-footer">
             <p>© Matthew Hurst</p>
         </footer>
+
     </body>
 </html>

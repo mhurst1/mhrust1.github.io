@@ -6,28 +6,70 @@
     <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <div id="content">
-            <h1>CSCE 242</h1>
-            <h2>Matthew Hurst</h2>
+        <header id="main-header">
+            <h1>CSCE 242: Client-Server Computing</h1>
+            <h2 id="student-name">Matthew Hurst</h2>
+        </header>
+
+        <main id="main-content">
             <div id="githubSection">
-                <img src="images/GitHub_Invertocat_White.jpg" alt="GitHub Cat Logo" width="30"/>
+                <img src="images/GitHub_Invertocat_White.jpg" alt="GitHub Cat Logo"/>
                 <nav id="githubLink">
                     <a href="https://github.com/mhurst1/mhurst1.github.io">My Github Page</a>
                 </nav>
             </div>
-            <p>
-                This class is a website design course in which we will utilize
-                 HTML and CSS to create the front end of a website, 
-                 while also using JavaScript to add functionality.
-            </p>
-            <h2>Assignments</h2>
-            <nav id="assignmentLinks">
-                <ul>
-                    <li><a href="assignments/01-basic-html/creatine.html">Basic HTML</a></li>
-                    <li><a href="assignments/02-basic-css/recovery.html">Basic CSS </a></li>
-                    <li><a href="assignments/03-page-layout/pageLayout.html">Page Layout</a></li>
-                </ul>
-            </nav>
-        </div>
+
+            <div id="class-description">
+                <p>
+                    This class is a website design course in which we will utilize
+                     HTML and CSS to create the front end of a website, 
+                     while also using JavaScript to add functionality.
+                </p>
+            </div>
+            
+            <section id="assignments">
+                <h2>Assignments</h2>
+                <nav id="assignmentLinks">
+                    <ul>
+                        <div class="assign">
+                            <li><a href="assignments/01-basic-html/creatine.html">Assignment 1 - Basic HTML</a></li>
+                            <img src="images/Assign1-picture.jpg" alt="Basic Html Picture"/>
+                            <p>
+                                This page gives an overview of creatine, explaing how it works in the body 
+                                and why it is one of the most popular and well-researched supplements in 
+                                strength and resistance training. This page highlights the benefits of creatine 
+                                such as improved energy, performance, and training intensity, while also 
+                                addressing saftey and dosage guidelines along with common misconceptions.
+                            </p>
+                        </div>
+
+                        <div class="assign">
+                            <li><a href="assignments/02-basic-css/recovery.html">Assignment 2 - Basic CSS </a></li>
+                            <img src="images/Assign2-picture.jpg" alt="Basic CSS Picture"/>
+                            <p>
+                                This page explains the importance of recovery when it comes to fitness and 
+                                performance, emphasizing how rest, sleep, and recovery practices help the body repair
+                                and perform at its best. It shows the connection between adequte sleep, improved performance,
+                                and how these reduce the chance on injury through examples and data.
+                            </p>
+                        </div>
+                        
+                        <div class="assign">
+                            <li><a href="assignments/03-page-layout/pageLayout.html">Assignment 3 - Page Layout</a></li>
+                            <img src="images/Assign3-picture.jpg" alt="Basic Html Picture"/>
+                            <p>
+                                This page provides an outline example of how a home page layout should look 
+                                using CSS and Flexbox to organize the page into sections. 
+                            </p>
+                        </div>
+                    </ul>
+                </nav>
+            </section>
+        </main>
+
+        <footer id="main-footer">
+            <p>© mhurst1</p>
+        </footer>
+
     </body>
 </html>

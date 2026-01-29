@@ -96,29 +96,29 @@ body{
 
 /* FOOTER */
 
-#main-footer{
+#footer-nav{
     background: rgb(0,0,0);
     color: rgb(255,255,255);
     padding:10px;
     font-weight: bold;
 }
-#main-footer ul{
+#footer-nav ul{
     display: flex;
     list-style-type: none;
     text-align: left;
     gap: 15px;
 }
-#main-footer li{
+#footer-nav li{
 
 }
-#main-footer li:not(:last-child)::after{
+#footer-nav li:not(:last-child)::after{
     content: "|";
     margin: 10px;
 }
-#main-footer a{
+#footer-nav a{
     text-decoration: none;
     color: rgb(255,255,255);
 }
-#main-footer a:hover{
+#footer-nav a:hover{
     background: rgb(204, 47, 65);
 }

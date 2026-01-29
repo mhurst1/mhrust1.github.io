@@ -1,0 +1,124 @@
+/*Matthew Hurst | CSCE 242*/
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(255,255,255);
+    width: 100%;
+    margin: 0;
+}
+
+#main-content{
+    background:rgb(255,255,255);
+    width: 100%;
+    margin: 0;
+}
+/* MAIN HEADER */
+
+#main-header{
+    background: rgb(0,0,0);
+    color: rgb(255,255,255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#main-header h1{
+    text-align: right;
+    font-size: 40px;
+}
+#main-header img{
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 12px 0 12px 40px;
+}
+
+/* TOP HEADER NAVIGATION*/
+
+#header-nav{
+    padding: 8px 20px;
+    font-weight: bold;
+}
+#header-nav ul{
+    display: flex;
+    list-style-type: none;
+    text-align: left;
+    gap: 15px;
+}
+
+#header-nav li{
+    font-size: 12px;
+}
+
+#header-nav li:not(:last-child)::after{
+    content: "|";
+    margin: 10px;
+}
+#header-nav a{
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+#header-nav a:hover{
+    background: rgb(204, 47, 65);
+}
+
+/* PAGE INFORMATION / HEADER */
+#page-info-nav{
+    background: rgb(117, 0, 10);
+}
+
+#page-info-nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+#page-info-nav li{
+    font-size: 20px;
+    font-weight: bold;
+}
+#page-info-nav a{
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+#page-info-nav a:hover{
+    background: rgb(107, 0, 9);
+}
+
+#content{
+
+}
+.rows{
+
+}
+.area{
+
+}
+
+/* FOOTER */
+
+#main-footer{
+    background: rgb(0,0,0);
+    color: rgb(255,255,255);
+    padding:10px;
+    font-weight: bold;
+}
+#main-footer ul{
+    display: flex;
+    list-style-type: none;
+    text-align: left;
+    gap: 15px;
+}
+#main-footer li{
+
+}
+#main-footer li:not(:last-child)::after{
+    content: "|";
+    margin: 10px;
+}
+#main-footer a{
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+#main-footer a:hover{
+    background: rgb(204, 47, 65);
+}

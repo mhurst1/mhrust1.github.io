@@ -15,18 +15,18 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: #43455c;
+    background: #43455c;
     text-align: center;
     padding: 10px;
 }
 
 #main-content{
-    background-color: #43455c;
+    background: #43455c;
     text-align: center;
     padding: 10px;
 }
 #main-footer {
-    background-color: #707793;
+    background: #707793;
     padding: 10px;
     text-align: center;
 }
@@ -45,7 +45,7 @@ body {
 }
 
 #githubLink a{
-    background-color: #707793;
+    background: #707793;
     text-decoration: none;
     font-style: italic;
     color:white;
@@ -62,15 +62,19 @@ body {
     text-decoration: none;
     font-size: 22px;
     color:white;
-    background-color: #43455c;
+    background: #43455c;
     padding: 4px;
     border-radius: 5px;
+    margin: auto;
 }
 
+
 .assign{
-    background-color: #707793;
+    background: #707793;
     padding: 20px;
     border-radius: 10px;
+    min-width: 0;
+    
 }
 
 .assign a:hover{
@@ -80,8 +84,8 @@ body {
 .assign img{
     margin: 20px auto;
     display: block;
-    max-width: 300px;
-    height: 150px;
+    max-width: 100%;
+    height: 100%;
     border: 5px solid #43455c;
     border-radius: 5px;
 }
@@ -91,41 +95,96 @@ body {
     color: #3bba9c;
 }
 
+
 #assignmentLinks ul{
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
     gap: 10px;
+
+    display: flex;
+    flex-direction: column;   
 }
 
 /*Headers*/
-h1{
+#main-header h1{
     color:#3bba9c;
+    padding-top: 10px;
 }
 
 #student-name{
+    padding: 10px;
     position: static;
     color:#3bba9c;
-    left: 20px;
-    top: 0px;
+    left: 8px;
+    top: 8px;
+    margin: 0;
 }
 
 #class-description{
     text-align: center;
 }   
 
+/*Project Section*/
+
+#project-section ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.projects{
+    background: #707793;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.projects a{
+    text-decoration: none;
+    font-size: 22px;
+    color:white;
+    background: #43455c;
+    padding: 4px;
+    border-radius: 5px;
+    margin: auto;
+}
+.projects a:hover{
+    color:#3bba9c;
+}
+#project-section h2{
+    text-align: center;
+    color: #3bba9c;
+}
+.projects img{
+    margin: 20px auto;
+    display: block;
+    max-width: 150px;
+    height: 200px;
+    border: 5px solid #43455c;
+    border-radius: 5px;
+}
+.projects li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 /*Larger Resolutions*/
 @media (min-width: 900px){
-    #assignments ul{
+    #assignmentLinks ul, #project-section ul{
         flex-direction: row;
+        flex-wrap: wrap;
+    
     }
-    .assign{
+    .assign, .projects{
         flex: 1;
     }
     #main-header{
         flex-direction: column;
+        flex-wrap: wrap;
     }
     #student-name{
         position: absolute;

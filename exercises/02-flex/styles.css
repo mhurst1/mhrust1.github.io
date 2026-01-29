@@ -86,54 +86,89 @@ body {
     gap: 10px
 }
 
-.titles{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+
+
+
+/*CLASS CONTENT*/
+
+
+
+
+
+
+
+
+/*Area*/
+.area {
+    background: #cdb4bd;
+    position:relative;
 }
-.titles h3{
-    text-align: center;
-    margin: 0;
-    background-color: rgb(111, 158, 161);
-    padding: 12px;
+
+.arrow {
+    font-size: 1.5em;
     color: white;
+    position: absolute;
+    top:33%;
+}
+#prev {
+    left: 5%;
+}
+#next{
+    right: 5%;
+}
+#slide-desc {
+    position: absolute;
+    color:white;
+    bottom:10%;
+    left:31%;
+    background: rgba(255,255,255,0.8);
+    padding:5px;
+    max-width: 40%;
 }
 
-.titles img{
-    display: block;
-    margin: auto;
-    width: 100%;
-    height: 300px;
-    margin: 0;
+/*Navigation*/
+#main-nav ul{
+    padding-left: 0;
 }
 
-#list{
-    margin: auto;
+#main-nav li{
+    list-style-type: none; /*Removes Bullets*/
+    background: #ffc8dd;
 }
+#square{
+    width: 100px;
+    height: 100px;
+    background:lightsalmon;
 
-/*Idea Content*/
-.idea-content{
-    display:flex;
-    flex-direction: column;
-    margin: 5px;
-    padding: 15px;
-    background-color: rgb(111, 158, 161);
-}
-.idea-content img{
-    display: block;
-    margin: auto;
-}
-
-.idea-content h3{
-    color: white;
-}
-
-.idea-content p{
-    color: white;
+    position: absolute; /*Absoulute = Whole Page | Relative = Relative Div Space*/
+    top: 50px;
+    left: 50px;
 }
 
 /*Larger Resolutions*/
 @media (min-width:900px){
+
+    #conent {
+        justify-content: space-between;
+        gap:1em;
+        /*flex-wrap: nowrap*/
+    }
+    .columns {
+        display: flex;
+    }
+
+    .one {
+        flex: 1;
+    }
+    .two {
+        flex: 2;
+    }
+    .three {
+        flex: 3;
+    }
+    .four {
+        flex: 4;
+    }
 
     #main-nav ul{
         flex-direction: row;
@@ -145,7 +180,6 @@ body {
     #gallery {
         flex-direction: row;
     }
-
 
     .idea-content{
         flex-direction: row;
@@ -159,5 +193,5 @@ body {
      .titles{
         flex: 1;
     }
-    
+    /*End of class content */
 }
